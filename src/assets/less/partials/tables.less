@@ -1,0 +1,213 @@
+.stripped-table {
+  table {
+    border-collapse: separate !important;
+    border-radius: 6px;
+    border-spacing: 0;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .ant-table-thead>tr:first-child>th {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    color: @colors[darkblue];
+    background: @colors[iceblue];
+    border-color: @colors[paleskyblue];
+  }
+  .ant-table-thead>tr>th,
+  .ant-table-tbody>tr>td {
+    padding: 13px 31px;
+  }
+  .ant-table-tbody>tr:nth-of-type(even)>td {
+    background: @colors[iceblue];
+  }
+  .ant-table-tbody>tr:nth-of-type(odd)>td {
+    background: @colors[white];
+  }
+}
+
+.stretch-table {
+  margin-left: -62px;
+  margin-right: -62px;
+  .info {
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    &:before {
+      position: absolute;
+      z-index: 1;
+      left: 4px;
+      top: 4px;
+      color: @colors[white];
+    }
+    &:after {
+      top: 0;
+      border-color: @warning-color transparent transparent @warning-color;
+      border-width: 12px;
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-top: 19px solid @warning-color;
+      border-left: 8px solid @warning-color;
+    }
+    &:hover {
+      &:after {
+        border-style: solid;
+        border-top: 19px solid @primary-color;
+        border-left: 8px solid @primary-color;
+      }
+    }
+  }
+  .ant-table-thead>tr:first-child>th {
+    text-align: left;
+  }
+  .ant-table-title {
+    border-radius: 0px;
+  }
+  .ant-table-content {
+    border-radius: 0px;
+    .ant-table-thead>tr:first-child>th:first-child,
+    .ant-table-thead>tr:first-child>th:last-child {
+      border-radius: 0px;
+    }
+  }
+  .ant-table-thead>tr:first-child>th {
+    background: @primary-color  !important;
+    color: @colors[white];
+    &:hover {
+      i {
+        color: @colors[lightblue]
+      }
+    }
+    i {
+      color: @primary-color;
+      &.on {
+        color: @colors[white];
+      }
+    }
+  }
+  .ant-table-title+.ant-table-content .ant-table-tbody tr td {
+    border-right: 1px solid @colors[paleskyblue];
+    padding: 15px;
+    padding-left: 30px;
+    cursor: pointer;
+    transition: 200ms;
+  }
+  .ant-table-tbody tr td {
+    border-right: 1px solid @colors[paleskyblue];
+    padding: 15px 10px;
+    cursor: pointer;
+    transition: 200ms;
+  }
+  .ant-table-tbody tr:hover {
+    color: @primary-color;
+  }
+  .ant-table-tbody {
+    tr .ant-table-selection-column {
+      display: none;
+    }
+    tr td:nth-child(2) {
+      position: relative;
+    }
+  }
+  .ant-table-thead .ant-table-selection-column {
+    display: none !important;
+  }
+  .ant-table-title+.ant-table-content .ant-table-row {
+    td {
+      border-top: 3px solid transparent;
+      border-bottom: 3px solid transparent;
+    }
+    td:nth-of-type(2) {
+      border-left: 3px solid transparent;
+    }
+    td:last-of-type {
+      border-right: 3px solid transparent;
+    }
+  }
+  .ant-table-title+.ant-table-content .ant-table-row-selected {
+    td {
+      border-top: 3px solid rgba(1, 176, 204, 0.4);
+      border-bottom: 3px solid rgba(1, 176, 204, 0.4);
+    }
+    td:nth-of-type(2) {
+      border-left: 3px solid rgba(1, 176, 204, 0.4)
+    }
+    td:last-of-type {
+      border-right: 3px solid rgba(1, 176, 204, 0.4)
+    }
+  }
+}
+
+//title
+.ant-table-title {
+  padding: 20px 0px !important;
+  background: @primary-color;
+  .d-flex.justify-content-space-between{
+    flex-direction: column
+  }
+  .ant-input-search {
+    height: 44px;
+    width: 300px;
+    .ant-input-suffix {
+      height: 40px;
+      width: 44px;
+    }
+  }
+}
+
+.table-popover {
+  margin-left: 16px !important;
+  max-width: 305px;
+  .ant-popover-content {
+    border: 1px solid @primary-color;
+    border-radius: 4px;
+    box-shadow: 0 15px 32px 0 rgba(0, 0, 0, 0.17);
+  }
+  .ant-popover-arrow {
+    left: 7px;
+    border-left: 1px solid @primary-color;
+    border-bottom: 1px solid @primary-color;
+    background: @colors[white];
+    border-width: 1px;
+    border-right: none;
+    border-top: none;
+    border-left-color: @primary-color  !important;
+    border-bottom-color: @primary-color  !important
+  }
+  .ant-popover-inner {
+    padding: 5px 20px;
+  }
+  .ant-popover-title {
+    font-size: 12px;
+    padding: 0;
+    padding-top: 5px;
+    font-weight: 600;
+  }
+  .ant-popover-inner-content {
+    font-size: 12px;
+    padding: 10px 0;
+    font-weight: 500;
+  }
+}
+
+.table-cover {
+  padding-left: 32px;
+  padding-right: 31px;
+}
+
+@media screen and (max-width: 480px) {
+  .stretch-table{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .table-cover{
+    padding: 0;
+    margin: 0 -18px;
+  }
+}
