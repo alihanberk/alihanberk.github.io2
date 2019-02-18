@@ -19230,6 +19230,10 @@ li.ant-select-tree-treenode-disabled > .ant-select-tree-node-content-wrapper:hov
     cursor: pointer;
     margin-top: 16px;
   }
+  .ant-drawer .ant-drawer-body h3 a {
+    color: #271d45;
+    font-weight: 400;
+  }
   .ant-drawer .mobile-header {
     display: flex;
     justify-content: space-between;
