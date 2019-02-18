@@ -19202,9 +19202,6 @@ li.ant-select-tree-treenode-disabled > .ant-select-tree-node-content-wrapper:hov
   .ant-layout .ant-layout-footer footer .footer-section .footer-head {
     margin-bottom: 16px !important;
   }
-  .ant-drawer {
-    background: rgba(255, 255, 255, 0.95);
-  }
   .ant-drawer *:not(button) {
     background: none;
   }
@@ -19215,6 +19212,7 @@ li.ant-select-tree-treenode-disabled > .ant-select-tree-node-content-wrapper:hov
   .ant-drawer .ant-drawer-content-wrapper {
     width: 100% !important;
     box-shadow: none !important;
+    background: rgba(255, 255, 255, 0.95);
   }
   .ant-drawer .ant-drawer-content-wrapper .ant-drawer-header {
     padding: 0 32px;
