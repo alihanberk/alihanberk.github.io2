@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="138" height="138" viewBox="0 0 138 138">
+    <defs>
+        <filter id="a" width="125%" height="140%" x="-12.5%" y="-20%" filterUnits="objectBoundingBox">
+            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <linearGradient id="b" x1="0%" x2="100.001%" y1="50%" y2="50%">
+            <stop offset="12.64%" stop-color="#0096CD"/>
+            <stop offset="76.66%" stop-color="#E6266F"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(21 17)">
+        <circle cx="48" cy="48" r="48" fill="#1F1747" fill-rule="nonzero" stroke="#FFF" stroke-width="3"/>
+        <g fill="#0496CE" transform="translate(33 43.5)">
+            <ellipse cx="3.863" cy="3.79" rx="3.528" ry="3.648"/>
+            <ellipse cx="14.262" cy="3.79" rx="3.528" ry="3.648"/>
+            <ellipse cx="24.662" cy="3.79" rx="3.528" ry="3.648"/>
+        </g>
+        <path fill="url(#b)" fill-rule="nonzero" d="M13.394 13.394c9.536-9.537 25.053-9.537 34.59 0 7.551 7.552 9.341 19 4.454 28.49l-1.102 2.14.623 2.324 2.054 7.665-7.665-2.054-2.325-.623-2.14 1.102c-9.488 4.887-20.937 3.097-28.49-4.455-9.536-9.536-9.536-25.053 0-34.59zM8.988 8.988c-11.984 11.985-11.984 31.416 0 43.401 9.676 9.676 24.202 11.535 35.748 5.588l18.087 4.846-4.846-18.087c5.947-11.546 4.087-26.073-5.588-35.748-11.985-11.984-31.416-11.984-43.4 0z" transform="translate(16.5 16.5)"/>
+    </g>
+</svg>
