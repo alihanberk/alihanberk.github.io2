@@ -24188,7 +24188,7 @@ small {
   .view-selector .selector-item:not(:last-child) {
     margin-right: 0px !important;
   }
-  .view-selector .selector-item .inner-selector {
+  .view-selector .selector-item .inner-selector div {
     display: flex;
     margin-top: 8px !important;
     margin-bottom: 8px !important;
