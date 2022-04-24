@@ -1,0 +1,21 @@
+.sticker-album {
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    transition: .5s ease-in-out;
+    margin: 20px 60px;
+    min-width: 500px;
+    border: 1px solid lighten(@text-color, 30);
+    text-align: center;
+    height: calc(100vh - 40px);
+
+    &.home {
+      width: 50%;
+    }
+
+    &.album {
+      width: 100%;
+    }
+  }
+}
